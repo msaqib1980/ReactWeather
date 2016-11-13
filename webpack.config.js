@@ -6,12 +6,12 @@ module.exports = {
         'script!foundation-sites/dist/foundation.min.js',
         './app/app.jsx',
     ],
-    externals:{
+    externals: {
         jquery: 'jQuery'
     },
-    plugins:[
+    plugins: [
         new webpack.ProvidePlugin({
-            '$':'jquery',
+            '$': 'jquery',
             'jQuery': 'jquery'
         })
     ],
@@ -29,7 +29,8 @@ module.exports = {
             Examples: 'app/components/Examples.jsx',
             WeatherForm: 'app/components/WeatherForm.jsx',
             WeatherMessage: 'app/components/WeatherMessage.jsx',
-            OpenWeatherMap: 'app/api/OpenWeatherMap.jsx'
+            OpenWeatherMap: 'app/api/OpenWeatherMap.jsx',
+            ErrorModal: 'app/components/ErrorModal.jsx'
         },
         extensions: ['', '.js', '.jsx']
     },
